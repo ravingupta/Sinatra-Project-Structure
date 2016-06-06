@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sinatra</title>
+  <style type="text/css">
+    /* CSS style for all pages */
+  </style>
+
+  <!-- Page specific css -->
+  <% yield_content :styles %>
+</head>
+<body>
+  <div class="container">
+    <!-- Page Content -->
+    <%= yield %>
+  </div>
+
+  <script type="text/javascript">
+    // Common javascript for all pages
+
+  </script>
+
+  <!-- Page specific javascripts -->
+  <% yield_content :scripts %>
+</body>
+</html>
+
+
+
